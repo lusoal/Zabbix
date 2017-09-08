@@ -1,5 +1,8 @@
 from pyzabbix import ZabbixAPI
 import pandas as pd
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 hgname=[]
 hgid=[]
@@ -29,25 +32,9 @@ for i in hh:
     #print i
     for y in zapi.host.get(selectGroups='extend', filter={'host':i}):
             tam = len(y['groups'])
-
-            if tam == 3:
-                host.append(i)
-                host.append(i)
-                host.append(i)
-                group.append(y['groups'][tam-3]['name'])
-                group.append(y['groups'][tam-2]['name'])
-                group.append(y['groups'][tam-1]['name'])
-
-            if tam == 2:
-                host.append(i)
-                host.append(i)
-                group.append(y['groups'][tam-2]['name'])
-                group.append(y['groups'][tam-1]['name'])
-
-            if tam == 1:
-                host.append(i)
-                group.append(y['groups'][tam-1]['name'])
-
+            for z in range(0, tam):
+				host.append(i)
+				group.append(y['groups'][z]['name'])
 
 data=pd.DataFrame({'Hostname':host,'Host Group':group})
 data.to_csv('zabbix_groups.csv',index=False)
