@@ -12,12 +12,11 @@ severidade = []
 
 dicionario = {'1':'Information', '2':'Warning', '3':'Average', '4':'High', '5':'Disaster'}
 
-url=''
-user=''
-password=''
+url=str(raw_input("Digite a Url: "))
+user=str(raw_input("Digite o User: "))
+password=str(raw_input("Digite a Senha: "))
 
-zapi = ZabbixAPI(url)
-zapi.login(user,password)
+zapi = ZabbixAPI(url = url, user = user, password = password)
 print(zapi.api_version())
 
 
