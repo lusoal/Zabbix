@@ -6,10 +6,9 @@ items=[]
 nometemplate=[]
 n = 1
 
-url=''
-user=''
-password=''
-
+url=str(raw_input("Digite a URL: "))
+user=str(raw_input("Digite o User: "))
+password=str(raw_input("Digite a senha: "))
 
 zapi = ZabbixAPI(url=url, user=user, password=password)
 
