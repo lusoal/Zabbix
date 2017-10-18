@@ -1,0 +1,37 @@
+.menu{
+  position:static;
+  margin-top:3%;
+  width:65%
+}
+
+.logo{
+  margin-top:3%
+}
+
+.texto-index{
+  position:relative;
+  margin-top:2%;
+  margin-bottom:2%;
+  padding:2%;
+  background-color:lightgrey;
+  width:80%
+}
+
+.hist{
+  padding:4%
+}
+
+.integrantes{
+  padding:5%;
+  margin-left:3%
+}
+
+.shows{
+  padding:3%;
+  background-color:lightgrey;
+  width:50%
+}
+
+.contato{
+	padding:4%
+}

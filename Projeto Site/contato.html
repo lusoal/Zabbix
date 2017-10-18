@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Thirty Seconds - Contato</title>
+  </head>
+  <body>
+
+    <center><img src="http://data.whicdn.com/images/14425861/original.jpg" width="60%"></center>
+
+    <center><div class="menu">
+      <a href="index.html"><button type="button" class="btn btn-secondary btn-lg">Home</button></a>
+      <a href="historia/historia-banda.html"><button type="button" class="btn btn-secondary btn-lg">História</button></a>
+      <a href="integrantes/integrantes.html"><button type="button" class="btn btn-secondary btn-lg">Integrantes</button></a>
+      <a href="shows/shows.html"><button type="button" class="btn btn-secondary btn-lg">Shows</button></a>
+      <a href="curiosidades/curiosidades.html"><button type="button" class="btn btn-secondary btn-lg">Curiosidades</button></a>
+      <button type="button" class="btn btn-secondary btn-lg">Contato</button>
+    </div></center>
+
+	<div class="contato">
+		  <div class="form-group">
+			<label for="exampleInputEmail1">Nome</label>
+			<input class="form-control" id="nome" aria-describedby="emailHelp" placeholder="Entre seu nome">
+			<small id="emailHelp" class="form-text text-muted">Digite seu nome.</small>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputPassword1">E-mail</label>
+			<input class="form-control" id="email" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+			<label for="exampleInputPassword1">Mensagem</label>
+			<textarea rows="8" cols="50" class="form-control" id="mensagem" placeholder="Digite sua mensagem para a Banda"></textarea>
+		  </div>
+		  <button id="enviar" class="btn btn-primary">Verificar Mensagem</button>
+	</div>
+
+	<div id="modal" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Verifique sua mensagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="name"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="salvar" type="button" class="btn btn-primary">Save changes</button>
+        <button id="fechar" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
